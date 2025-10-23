@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación - Antonio Rodríguez</title>
+    <!-- Carga de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicar la fuente Inter a toda la página */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Contenedor principal de la tarjeta --><div class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-3xl">
+        
+        <!-- Contenedor principal de dos columnas (se apilan en móvil) --><div class="flex flex-col md:flex-row items-start md:space-x-12 space-y-8 md:space-y-0 w-full">
+            
+            <!-- COLUMNA IZQUIERDA (Nombre, Título, Logo) --><!-- Centrada en móvil (items-center), alineada a la izquierda en escritorio (md:items-start) --><div class="flex flex-col items-center md:items-start md:w-1/2 w-full">
+                <!-- SECCIÓN DE NOMBRE Y TÍTULO --><!-- Centrado en móvil (text-center), alineado a la izquierda en escritorio (md:text-left) --><div class="text-center md:text-left mb-8">
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">ANTONIO RODRÍGUEZ</h1>
+                    <p class="text-2xl lg:text-3xl text-gray-600 font-medium mt-1">Director de Informática</p>
+                </div>
+                
+                <!-- SECCIÓN DEL LOGO --><div class="flex-shrink-0">
+                    <!-- 
+                        Reemplaza 'src' por la URL 'raw' de tu logo en GitHub.
+                        Ejemplo de URL raw: https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/logo.png
+                        Una ruta local (como file://... o C:\...) no funcionará para otros usuarios.
+                        El onerror mostrará un placeholder si la imagen de GitHub no carga.
+                    --><img 
+                        class="w-40 h-40 rounded-full object-cover shadow-md" 
+                        src="https://raw.githubusercontent.com/tu-usuario/tu-repositorio/main/ruta/a/tu-logo.png" 
+                        alt="Logo de la Empresa"
+                        onerror="this.src='https://placehold.co/160x160/cccccc/333333?text=Logo+Error'"
+                    >
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA (Información de Contacto y QR) --><!-- Centrada en móvil (items-center), alineada a la izquierda en escritorio (md:items-start) --><div class="flex flex-col items-center md:items-start md:w-1/2 w-full space-y-8">
+                
+                <!-- Detalles de Contacto --><!-- Centrados en móvil (items-center), alineados a la izquierda en escritorio (sm:items-start) --><div class="flex flex-col items-center sm:items-start">
+                    
+                    <!-- Lista de información de contacto --><div class="space-y-4">
+                        <!-- Teléfono 1 --><div class="flex items-center space-x-3">
+                            <!-- Icono de Teléfono (Heroicons) --><svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.832-.84-5.433-3.43-6.273-6.272l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" />
+                            </svg>
+                            <span class="text-xl text-gray-700 font-medium">849 324 3434</span>
+                        </div>
+                        
+                        <!-- Correo Electrónico --><div class="flex items-center space-x-3">
+                            <!-- Icono de Correo (Heroicons) --><svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                            <span class="text-xl text-gray-700 font-medium">jsdriver@jsdriverrd.com</span>
+                        </div>
+
+                        <!-- Sitio Web --><div class="flex items-center space-x-3">
+                            <!-- Icono de Mundo (Heroicons) --><svg class="w-6 h-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c.24 0 .468-.02.69-.057M12 21c-.24 0-.468-.02-.69-.057m0 0c-1.15.041-2.27.087-3.386.135M12 3c.24 0 .468.02.69.057m0 0c1.15-.041 2.27-.087 3.386-.135M12 3c-.24 0-.468-.02-.69-.057m0 0c-1.15.041-2.27.087-3.386.135M3.284 5.997c.23.19.47.374.72.551m0 0c.25.177.51.343.78.5m0 0c.66.41 1.37.754 2.12.993M20.716 5.997c-.23.19-.47.374-.72.551m0 0c-.25.177-.51.343.78.5m0 0c-.66.41-1.37.754-2.12.993m0 0c-.32.103-.65.193-.99.27m0 0c-.32.103-.65.193-.99.27m0 0c-1.12.24-2.28.36-3.47.36s-2.35-.12-3.47-.36m0 0c-.34-.077-.67-.167-.99-.27m0 0c-.34-.077-.67-.167-.99-.27" />
+                            </svg>
+                            <span class="text-xl text-gray-700 font-medium">www.jsdriver.net</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Código QR (vCard para añadir contacto) --><div class="flex-shrink-0">
+                    <p class="text-gray-600 text-sm mb-2 text-center md:text-left">Escanea para añadir a tus contactos:</p>
+                    <img 
+                        class="w-32 h-32" 
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ARodr%C3%ADguez%3BAntonio%3B%3B%3B%0AFN%3AAntonio%20Rodr%C3%ADguez%0ATITLE%3ADirector%20de%20Inform%C3%A1tica%0ATEL%3BTYPE%3DCELL%3A%2B18493243434%0AEMAIL%3BTYPE%3DINTERNET%3Ajsdriver%40jsdriverrd.com%0AURL%3Ahttps%3A%2F%2Fwww.jsdriver.net%0AEND%3AVCARD" 
+                        alt="Código QR para añadir contacto"
+                        onerror="this.src='https://placehold.co/128x128/cccccc/333333?text=QR+Error'"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
